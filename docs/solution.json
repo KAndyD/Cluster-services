@@ -1,0 +1,159 @@
+{
+  "variable_order": [
+    "x1",
+    "x2",
+    "s1",
+    "s2"
+  ],
+  "bases": [
+    {
+      "basis": [
+        "x1",
+        "x2"
+      ],
+      "determinant": 4,
+      "values": [
+        "3",
+        "5",
+        "0",
+        "0"
+      ],
+      "feasible": true,
+      "objective": "21"
+    },
+    {
+      "basis": [
+        "x1",
+        "s1"
+      ],
+      "determinant": -1,
+      "values": [
+        "18",
+        "0",
+        "-20",
+        "0"
+      ],
+      "feasible": false,
+      "objective": "36"
+    },
+    {
+      "basis": [
+        "x1",
+        "s2"
+      ],
+      "determinant": 2,
+      "values": [
+        "8",
+        "0",
+        "0",
+        "10"
+      ],
+      "feasible": true,
+      "objective": "16"
+    },
+    {
+      "basis": [
+        "x2",
+        "s1"
+      ],
+      "determinant": -3,
+      "values": [
+        "0",
+        "6",
+        "4",
+        "0"
+      ],
+      "feasible": true,
+      "objective": "18"
+    },
+    {
+      "basis": [
+        "x2",
+        "s2"
+      ],
+      "determinant": 2,
+      "values": [
+        "0",
+        "8",
+        "0",
+        "-6"
+      ],
+      "feasible": false,
+      "objective": "24"
+    },
+    {
+      "basis": [
+        "s1",
+        "s2"
+      ],
+      "determinant": 1,
+      "values": [
+        "0",
+        "0",
+        "16",
+        "18"
+      ],
+      "feasible": true,
+      "objective": "0"
+    }
+  ],
+  "vertices": [
+    {
+      "point": [
+        "3",
+        "5"
+      ],
+      "active_boundaries": [
+        "2x1 + 2x2 = 16",
+        "x1 + 3x2 = 18"
+      ],
+      "objective": "21"
+    },
+    {
+      "point": [
+        "8",
+        "0"
+      ],
+      "active_boundaries": [
+        "2x1 + 2x2 = 16",
+        "x2 = 0"
+      ],
+      "objective": "16"
+    },
+    {
+      "point": [
+        "0",
+        "6"
+      ],
+      "active_boundaries": [
+        "x1 + 3x2 = 18",
+        "x1 = 0"
+      ],
+      "objective": "18"
+    },
+    {
+      "point": [
+        "0",
+        "0"
+      ],
+      "active_boundaries": [
+        "x1 = 0",
+        "x2 = 0"
+      ],
+      "objective": "0"
+    }
+  ],
+  "optimum": {
+    "light": 3,
+    "heavy": 5,
+    "effect": 21,
+    "memory_used": 16,
+    "vcpu_used": 18
+  },
+  "integer_optima": [
+    [
+      3,
+      5
+    ]
+  ]
+}
